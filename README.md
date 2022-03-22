@@ -31,11 +31,16 @@ This implementation contains:
 First, install prerequisites with:
 
     $ pip install tqdm gym[all]
+    
+Second, generate embeddings of a social graph (evoling social networks) using generate_embeddings.py inside data folder
 
+
+## Train a DQN Model on Evolving Social Networks
 To train a model for an evolving social networks such as bitcoinalpha and bitcoinotc against opponent's degree strategy:
 
     $ python main.py --env_name=bitcoinalpha --is_train=True --opponent degre
     $ python main.py --env_name=bitcoinotc--is_train=True --opponent degre
 
+## Test a DQN Model on Evolving Social Networks
 To test a model for an evolving social networks such as bitcoinalpha against opponent's weight strategy:
     $ python main.py --is_train=False --env_name=bitcoinalph --opponent weight --testing_episode 2000
