@@ -43,4 +43,5 @@ To train a model for an evolving social networks such as bitcoinalpha and bitcoi
 
 ## Test a DQN Model on Evolving Social Networks
 To test a model for an evolving social networks such as bitcoinalpha against opponent's weight strategy:
+
     $ python main.py --is_train=False --env_name=bitcoinalph --opponent weight --testing_episode 2000
